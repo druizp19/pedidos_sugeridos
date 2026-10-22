@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98.5%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Medifarma Modern Deep Indigo/Purple */
+    --primary: 252 56% 57%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 252 56% 57%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02" 1, "cv03" 1, "cv04" 1, "cv11" 1, "tnum" 1;
+  }
+}
+
+/* Tabular figures for dense financial/BI data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars for clean minimal tables */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@layer base {
+  :root { --radius: .85rem; --background: 210 40% 98%; }
+  html.dark {
+    --background: 224 45% 6%; --foreground: 210 40% 98%;
+    --card: 222 47% 11%; --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%; --popover-foreground: 210 40% 98%;
+    --secondary: 217 33% 17%; --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%; --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 17%; --accent-foreground: 210 40% 98%;
+    --border: 217 33% 20%; --input: 217 33% 20%; --primary: 255 85% 75%; --primary-foreground: 224 45% 6%;
+  }
+  body { font-family: 'Segoe UI', system-ui, sans-serif;  }
+  button:focus-visible, a:focus-visible { outline: 2px solid #8b5cf6; outline-offset: 3px; }
+}
+.surface { @apply rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm; }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; } }
+
+/* Change the entire report palette in one paint, including portal content. */
+html.theme-switching,
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after {
+  transition: none !important;
+}

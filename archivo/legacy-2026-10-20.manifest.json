@@ -1,0 +1,118 @@
+[
+  {
+    "path": "DIAGNOSTICO.md",
+    "sha256": "F272F41F6E27DD6F8627DCCA579A7D901E06C7F738F7E2EAE4F53E114B5E82A1"
+  },
+  {
+    "path": "frontend-refactor.png",
+    "sha256": "1E3F83AB165083E9E2A62FE03BFBA0ED7ABDC5A853A736B054DCD9603B7C9818"
+  },
+  {
+    "path": "frontend/components/client-detail-modal.tsx",
+    "sha256": "B5AAC18F6E32CA7486E51EABAC2E0977EE278ED499B6EAA6AA70B994D85F060D"
+  },
+  {
+    "path": "frontend/components/client-modal.tsx",
+    "sha256": "BEE13D4E7F47B8C386398163A6A36A9BF0938E36ED8BAAAA043A8760EE2AB4DA"
+  },
+  {
+    "path": "frontend/components/filter-toolbar.tsx",
+    "sha256": "A124AD2FA5563F99D666C400BE7C5CF4AACF45AA744EB8180FC08149E0B89F54"
+  },
+  {
+    "path": "frontend/components/header.tsx",
+    "sha256": "C0719AA82EBDF3F8AAC91FAF1B633E8850E12E2775F5B28EBC904702AFEECC5E"
+  },
+  {
+    "path": "frontend/components/kpi-summary.tsx",
+    "sha256": "493DAC064204DE0E11B7985E7C85D1FC6126E4315BC9787A745B58822B575B34"
+  },
+  {
+    "path": "frontend/components/matrix-table.tsx",
+    "sha256": "E1C75CFA81E1BD8982CEAE997972C447C5D0D10E1198F0A29F27055A7F1997BD"
+  },
+  {
+    "path": "frontend/public/assets/medifarma_logo_purple.png",
+    "sha256": "E3F9FFD99F087B5690570B9244AF9114CEE8EC572AEB353B953F28BD953A0985"
+  },
+  {
+    "path": "frontend/public/assets/medifarma_logo_white.png",
+    "sha256": "5FBA8FE52552E13C5191988AB0B6F2855D43B8FE25ECF75712F8825340282083"
+  },
+  {
+    "path": "public/assets/medifarma_logo_purple.png",
+    "sha256": "E3F9FFD99F087B5690570B9244AF9114CEE8EC572AEB353B953F28BD953A0985"
+  },
+  {
+    "path": "public/assets/medifarma_logo_white.png",
+    "sha256": "5FBA8FE52552E13C5191988AB0B6F2855D43B8FE25ECF75712F8825340282083"
+  },
+  {
+    "path": "public/css/style.css",
+    "sha256": "B9673CB8FD607C3744746A8B26C1981554271285A8FEA840EE25351084F5A06C"
+  },
+  {
+    "path": "public/index.html",
+    "sha256": "6A98511AE073559A66A26F40BA977577726203FB9893D4905662ECC537938047"
+  },
+  {
+    "path": "public/js/app.js",
+    "sha256": "921B333E9A345CC51CA6CC7CCE5C423C6F3F9AEF559EFBC22457961C9DA7D583"
+  },
+  {
+    "path": "requirements.txt",
+    "sha256": "F875881314CBA9346CEEF1FE520CD2358F5B1E43AD2412D0DAA8CFB78E67DB9A"
+  },
+  {
+    "path": "server/__pycache__/data_engine.cpython-313.pyc",
+    "sha256": "C3723B7C2751FC37983A6187A8B99924BE2A6B30EB33783649DA395F7C402ACA"
+  },
+  {
+    "path": "server/data_engine.py",
+    "sha256": "0E12C0A440DFA15F3CDA6BF92EB97111C161DD6C7917D443DB7B0CB4890BC4F4"
+  },
+  {
+    "path": "server/server.py",
+    "sha256": "B0F1AA540EF8D375ADF4CC0A44BFE0B0E676B1B065781FFBE4437912878B0DD7"
+  },
+  {
+    "path": "server/test_api_endpoints.py",
+    "sha256": "2DB0558BCF7F6A60FEBE60A712F3859B8C32C0B41DC7A927254482FFC9C31FF3"
+  },
+  {
+    "path": "server/test_client_detail.py",
+    "sha256": "9D01A59B978AA10762C039DCE1841687D6EEAD63BB96B438C041F5BE2FA497BD"
+  },
+  {
+    "path": "server/test_client_query.py",
+    "sha256": "7BFB20E051BB1FDEC570B20407034511FED30CD41A39AA8DBFFA8A28B61874B8"
+  },
+  {
+    "path": "server/test_e2e_client_matrix.py",
+    "sha256": "E009A7E0190FEEADA8097AFABFB8B015B7804EF86631BA652C300CF4B83C757F"
+  },
+  {
+    "path": "server/test_filters.py",
+    "sha256": "416FC36B3B622ACFDC9C78DC48CEAAF4C638BC60C927D44C89A67C5A3A73C688"
+  },
+  {
+    "path": "server/test_sql_connection.py",
+    "sha256": "90F8F2B05E615907C2B8ED4D5E1065314AC44F27928DC5471166590756DE1D31"
+  },
+  {
+    "path": "server/test_totals_fix.py",
+    "sha256": "D1D87A338C5A6021F417C930F4BBB08D1CE560B15A80FB0C1A791F852F23F7FC"
+  },
+  {
+    "path": "VALIDACION.md",
+    "sha256": "2F684A5EC2A734E75099BBCE6F0AFD6F9BBD4B70BB43326C5CD4952FEA8058FC"
+  },
+  {
+    "path": "vista-detalle.png",
+    "sha256": "59AD4CCF1D6F7746A22C9010288DEE07BE3C40D4A03218406B46F44D46DA1BB1"
+  },
+  {
+    "path": "vista-reporte.png",
+    "sha256": "DE02367E62548BEBF846C6F25E565036263F5133789D916101AD1A7563095352"
+  }
+]

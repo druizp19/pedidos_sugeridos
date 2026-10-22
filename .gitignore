@@ -1,0 +1,31 @@
+# Environment variables (CREDENTIALS)
+.env
+*.env
+.env.local
+.env.*.local
+
+# Node & Next.js
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+.next/
+out/
+
+# Python
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*.pyc
+venv/
+.venv/
+env/
+
+# OS & temporary
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+.npm-cache/
+*.tsbuildinfo
