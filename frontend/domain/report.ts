@@ -9,7 +9,7 @@ export const VERSIONS: Version[] = [
 ];
 export type Query = { version: string; unit: 'UNIDAD' | 'VALOR'; units: string[]; franchises: string[];
   brands: string[]; categories: string[]; zones: string[]; supervisors: string[]; sellers: string[];
-  clients: string[]; search: string; client?: string; allowedZones?: string[] };
+  clients: string[]; search: string; client?: string; allowedZones?: string[]; allowedAssignments?: Seller[] };
 export type Material = { code: string; sku: string; unit: string; franchise: string; brand: string; market: string; competitor: boolean };
 export type Seller = { zone: string; seller: string; supervisor: string };
 export type Catalog = { materials: Material[]; clients: ClientOption[]; sellers: Seller[] };
@@ -21,7 +21,7 @@ export const zoneCode = (zone: string) => zone.trim().split(' - ')[0];
 // Commercial codes are matched by code; geographic segments retain their full name.
 export const clientZoneKey = (zone: string) => {
   const value = zone.trim();
-  return /^[A-Za-z][0-9]+(?: - |$)/.test(value) ? zoneCode(value) : value;
+  return /^[A-Za-z]+[0-9]+(?: - |$)/.test(value) ? zoneCode(value) : value;
 };
 export function assignClientSellers(clients: ClientOption[], sellers: Seller[]): ClientOption[] {
   const byZone = new Map<string, string[]>();
@@ -58,7 +58,7 @@ export const matchesMaterial = (m: Material, q: Query) => m.brand.trim() !== '' 
   && (!q.units.length || q.units.includes(m.unit)) && (!q.franchises.length || q.franchises.includes(m.franchise))
   && (!q.brands.length || q.brands.includes(m.brand));
 export function clientMatches(c: ClientOption, q: Query): boolean {
-  return (!q.allowedZones || q.allowedZones.includes(zoneCode(c.zonabase || '')))
+  return (!q.allowedZones || q.allowedZones.includes(clientZoneKey(c.zona_cliente || '')))
     && (!q.categories.length || q.categories.includes(c.categorizacion))
     && (!q.zones.length || q.zones.some(z => clientZoneKey(z) === clientZoneKey(c.zona_cliente || '')))
     && (!q.supervisors.length || q.supervisors.includes(c.supervisor || ''))

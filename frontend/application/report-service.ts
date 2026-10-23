@@ -2,6 +2,7 @@ import { calculateReport, clientMatches, categories, assignedClientRucs, type Qu
 import { validVersionId } from '@/domain/report-versions';
 import type { ReportRepository } from './ports/report-repository';
 import type { ReportCaches } from './ports/report-cache';
+import { scopeCatalog } from '@/domain/access';
 export class InputError extends Error {}
 export function parseQuery(body: Record<string, unknown>, allowedZones?: string[]): Query {
   const array = (key: string, max = 100): string[] => {
@@ -34,7 +35,7 @@ export class ReportService {
     const versions = await this.versions();
     const version = versions.find(v => v.id === q.version);
     if (!version) throw new InputError('Esta versión aún no está disponible para el reporte.');
-    const catalog = await this.catalog(version);
+    const catalog = scopeCatalog(await this.catalog(version), q.allowedZones, q.allowedAssignments);
     const clients = catalog.clients.filter(c => clientMatches(c,q));
     const own = catalog.materials.filter(m => m.brand.trim() !== '' && m.brand.trim().toUpperCase() !== 'COMPETIDORES');
     // Send distinct dimension combinations, never the full customer population.
@@ -56,7 +57,7 @@ export class ReportService {
   async search(q: Query) {
     const version = (await this.versions()).find(v => v.id === q.version);
     if (!version) throw new InputError('Esta versión aún no está disponible para el reporte.');
-    const catalog = await this.catalog(version); const term = q.search.trim().toLocaleLowerCase('es');
+    const catalog = scopeCatalog(await this.catalog(version), q.allowedZones, q.allowedAssignments); const term = q.search.trim().toLocaleLowerCase('es');
     const matches = catalog.clients.filter(c => clientMatches(c,q) && (!term || `${c.ruc} ${c.farmacia} ${c.cp_cliente}`.toLocaleLowerCase('es').includes(term)));
     return { items: matches.slice(0,100), total: matches.length, limit: 100 };
   }
@@ -64,7 +65,7 @@ export class ReportService {
     const versions = await this.versions(); const version = versions.find(v => v.id === q.version);
     if (!version?.enabled) throw new InputError('Esta versión aún no tiene un resumen generado.');
     return this.caches.reports.get(JSON.stringify({q, version}), async () => {
-      const catalog = await this.catalog(version);
+      const catalog = scopeCatalog(await this.catalog(version), q.allowedZones, q.allowedAssignments);
       // Client columns are independent of the matrix population, but cannot bypass access scope.
       const permitted = catalog.clients.filter(c => clientMatches(c,{...q,categories:[],zones:[],supervisors:[],sellers:[]}));
       const columns = q.client ? permitted.filter(c=>c.ruc === q.client || c.cp_cliente === q.client).slice(0,1)

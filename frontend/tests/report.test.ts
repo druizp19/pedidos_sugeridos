@@ -318,15 +318,16 @@ test('client zone assigns multiple sellers and marketing fallback without using 
 });
 
 test('filter relations use full authorized catalog, deduplicate tuples and do not query sales', async()=>{
- const clients=Array.from({length:1002},(_,i)=>({...catalog.clients[0],ruc:String(i),zonabase:'A021',zona_cliente:i===1001?'LAST':'A021',supervisor:'S',vendedores:['Uno','Dos']}));
+ const clients=Array.from({length:1002},(_,i)=>({...catalog.clients[0],ruc:String(i),zonabase:'A021',zona_cliente:i===1001?'A022':'A021',supervisor:'S',vendedores:['Uno','Dos']}));
  clients.push({...clients[0],ruc:'private',zonabase:'A022',zona_cliente:'SECRET',supervisor:'PRIVATE'});
  let catalogCalls=0;
- const service=createReportService(repository({catalog:async()=>{catalogCalls++;return {...catalog,clients};},sales:async()=>{throw new Error('must not query sales');}}));
- const result=await service.options({...q,allowedZones:['A021']});
+ const sellers=['A021','A022'].flatMap(zone=>['Uno','Dos'].map(seller=>({zone,seller,supervisor:'S'})));
+ const service=createReportService(repository({catalog:async()=>{catalogCalls++;return {...catalog,clients,sellers};},sales:async()=>{throw new Error('must not query sales');}}));
+ const result=await service.options({...q,allowedZones:['A021','A022']});
  assert.equal(result.clients.length,1000);
  assert.equal(result.relations.clients.length,4);
- assert.ok(result.relations.clients.some(row=>row[1]==='LAST'));
+ assert.ok(result.relations.clients.some(row=>row[1]==='A022'));
  assert.ok(result.relations.clients.every(row=>row[1]!=='SECRET'));
  assert.deepEqual(result.relations.materials,[['FARMA','F','A'],['FARMA','F','B']]);
- await service.options({...q,allowedZones:['A021']}); assert.equal(catalogCalls,1);
+ await service.options({...q,allowedZones:['A021','A022']}); assert.equal(catalogCalls,1);
 });

@@ -1,6 +1,7 @@
 import type { ClientSearch,ReportGateway } from '@/application/ports/report-gateway';
 import type { FilterState } from '@/domain/report-contracts';
 import { getApiPath } from '@/lib/utils';
+import { SESSION_LOST } from './session-gateway';
 
 export function reportPayload(f: FilterState) {
   const list = (value: string) => value ? [value] : [];
@@ -15,6 +16,7 @@ export function createHttpReportGateway(transport: typeof fetch = fetch): Report
       ...options, headers: { 'Content-Type': 'application/json', ...options.headers },
     });
     if (!response.ok) {
+      if ((response.status === 401 || response.status === 403) && typeof window !== 'undefined') window.dispatchEvent(new Event(SESSION_LOST));
       const error = await response.json().catch(() => null);
       throw new Error(error?.error || (response.status === 503 ? 'Hay varias consultas en espera. Intenta nuevamente.' : 'No se pudo completar la consulta.'));
     }

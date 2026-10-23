@@ -1,4 +1,5 @@
 "use client";
+import type { ReactNode } from 'react';
 import { Alert,AlertDescription } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
 import { Select,SelectContent,SelectItem,SelectTrigger,SelectValue } from '@/components/ui/select';
@@ -8,10 +9,11 @@ import { BarChart2,Coins,FileSpreadsheet,Moon,Package,Sun } from 'lucide-react';
 import { useExport } from '../hooks/use-export';
 import { useTheme } from '../hooks/use-theme';
 interface HeaderProps {
+  accountControl?: ReactNode;
   filters: FilterState; versions: FilterData['versions']; onVersion: (v: string) => void;
   onUnitChange: (u: FilterState['unidadMedida']) => void; isLoading: boolean; hasReport: boolean;
 }
-export function Header({ filters, versions, onVersion, onUnitChange, isLoading, hasReport }: HeaderProps) {
+export function Header({ accountControl, filters, versions, onVersion, onUnitChange, isLoading, hasReport }: HeaderProps) {
   const { dark, toggle } = useTheme();
   const { exporting, error, download } = useExport();
   return <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
@@ -25,6 +27,7 @@ export function Header({ filters, versions, onVersion, onUnitChange, isLoading, 
           <SelectTrigger aria-label="Versión de datos" className="w-[235px] bg-card text-xs"><SelectValue placeholder={versions.length ? 'Seleccionar versión' : 'Sin versiones disponibles'} /></SelectTrigger>
           <SelectContent>{versions.filter(v => v.enabled).map(v => <SelectItem key={v.id} value={v.id}>{v.id} · {v.label}</SelectItem>)}</SelectContent>
         </Select>
+        {accountControl}
         <div role="group" aria-label="Unidad de medida" className="flex rounded-lg border bg-muted/50 p-1">
           {(['UNIDAD', 'S/ SOLES'] as const).map(unit => <Button key={unit} size="sm" variant={filters.unidadMedida === unit ? 'default' : 'ghost'} aria-pressed={filters.unidadMedida === unit} onClick={() => onUnitChange(unit)} className="gap-2">{unit === 'UNIDAD' ? <Package size={14} /> : <Coins size={14} />}{unit === 'UNIDAD' ? 'Unidades' : 'Soles'}</Button>)}
         </div>

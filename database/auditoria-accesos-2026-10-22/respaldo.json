@@ -1,0 +1,761 @@
+{
+  "fecha": "2026-10-22",
+  "changes": [
+    {
+      "before": {
+        "id_usuario": 287,
+        "nombre": "MARIBEL LIZ CASTILLO NUNURA",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "MARIBEL LIZ CASTILLO NUNURA",
+        "supervisor_name": "MUÑOZ BALTA ALEJANDRO DANIEL"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 288,
+        "nombre": "CHRISTHIAN ELVIS NUÑEZ NUÑEZ",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "CHRISTHIAN ELVIS NUÑEZ NUÑEZ",
+        "supervisor_name": "MUÑOZ BALTA ALEJANDRO DANIEL"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 289,
+        "nombre": "JARUMI DEL PILAR HURTADO DE MENDOZA CALDERON",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "JARUMI DEL PILAR HURTADO DE MENDOZA CALDERON",
+        "supervisor_name": "MUÑOZ BALTA ALEJANDRO DANIEL"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 290,
+        "nombre": "CINTHYA LORENA SALDAÑA HUAMAN",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "CINTHYA LORENA SALDAÑA HUAMAN",
+        "supervisor_name": "MUÑOZ BALTA ALEJANDRO DANIEL"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 291,
+        "nombre": "WILDER MARCO ALMENDRAS VALVERDE",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "WILDER MARCO ALMENDRAS VALVERDE",
+        "supervisor_name": "MUÑOZ BALTA ALEJANDRO DANIEL"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 292,
+        "nombre": "GLENDA ELIANA GUTIERREZ AGUILAR",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "GLENDA ELIANA GUTIERREZ AGUILAR",
+        "supervisor_name": "MUÑOZ BALTA ALEJANDRO DANIEL"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 293,
+        "nombre": "JOSE SAMUEL SOTELO CHANG",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "JOSE SAMUEL SOTELO CHANG",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 294,
+        "nombre": "VICTOR ALEJANDRO FUILCO GASPAR",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "VICTOR ALEJANDRO FUILCO GASPAR",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 295,
+        "nombre": "FLORANGEL ALMENDARIZ ZENTENO",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "FLORANGEL ALMENDARIZ ZENTENO",
+        "supervisor_name": "MEDINA LIZARRAGA JESUS ITALO"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 296,
+        "nombre": "CARMEN ROSA RAMOS LLANLLAYA",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "CARMEN ROSA RAMOS LLANLLAYA",
+        "supervisor_name": "MEDINA LIZARRAGA JESUS ITALO"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 297,
+        "nombre": "GAONA JUSCAMAYTA DAVID ELVIS",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "GAONA JUSCAMAYTA DAVID ELVIS",
+        "supervisor_name": "MEDINA LIZARRAGA JESUS ITALO"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 298,
+        "nombre": "SANDRA VANESSA QUISPE HUAMANI",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "SANDRA VANESSA QUISPE HUAMANI",
+        "supervisor_name": "MEDINA LIZARRAGA JESUS ITALO"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 299,
+        "nombre": "MARIANELA DE LOS MILAGROS SALAS PINTO",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "MARIANELA DE LOS MILAGROS SALAS PINTO",
+        "supervisor_name": "MEDINA LIZARRAGA JESUS ITALO"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 300,
+        "nombre": "NADIA LUCERO IDOÑA SOLIS",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "NADIA LUCERO IDOÑA SOLIS",
+        "supervisor_name": "MEDINA LIZARRAGA JESUS ITALO"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 301,
+        "nombre": "VERONICA ATENCIO DUEÑAS",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "VERONICA ATENCIO DUEÑAS",
+        "supervisor_name": "MEDINA LIZARRAGA JESUS ITALO"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 302,
+        "nombre": "CARLOS ENRIQUE LEON PALACIOS",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "CARLOS ENRIQUE LEON PALACIOS",
+        "supervisor_name": "MEDINA LIZARRAGA JESUS ITALO"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 303,
+        "nombre": "FLOR DE MARIA DOLORES UGARTE MEZA",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "FLOR DE MARIA DOLORES UGARTE MEZA",
+        "supervisor_name": "MEDINA LIZARRAGA JESUS ITALO"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 304,
+        "nombre": "MOTA VALDEZ MANUEL RAMON",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "MOTA VALDEZ MANUEL RAMON",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 305,
+        "nombre": "JIMY HENRRY CARVO SANCHEZ",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "JIMY HENRRY CARVO SANCHEZ",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 306,
+        "nombre": "JUAN BOLIVAR NAVARRO AGUILLAR",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "JUAN BOLIVAR NAVARRO AGUILLAR",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 307,
+        "nombre": "SHEYLA CINDY HUARCAYA TITO",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "SHEYLA CINDY HUARCAYA TITO",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 308,
+        "nombre": "JULIO CESAR AYALA ZAVALA",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "JULIO CESAR AYALA ZAVALA",
+        "supervisor_name": "VASQUEZ PEÑA CLARA DEL CARMEN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 267,
+        "nombre": "CESAR GONZALO GAVIÑO LAVALLE",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "GAVIÑO LAVALLE CESAR GONZALO",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 268,
+        "nombre": "ALEX IGNACIO ROJAS ARTEAGA",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "ROJAS ARTEAGA ALEX IGNACIO",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 270,
+        "nombre": "ANGELA INES MACEDA VINCES",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "MACEDA VINCES  ANGELA INES",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 269,
+        "nombre": "ROBERT ALEXANDER RUIZ ASTO",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "RUIZ ASTO ROBERT ALEXANDER",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 271,
+        "nombre": "GLISKMAN ELMER BASTIDAS VELIZ",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "BASTIDAS VELIZ GLISKMAN ELMER",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 272,
+        "nombre": "NADIA ESTHER BUSTILLOS VARGAS",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "BUSTILLOS VARGAS NADIA ESTHER",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 273,
+        "nombre": "CARLOS JAVIER CASTAÑEDA ROMERO",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "CASTAÑEDA ROMERO CARLOS JAVIER",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 274,
+        "nombre": "KAREN RUTH REYES GARAGORRI",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "REYES GARAGORRI KAREN RUTH",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 275,
+        "nombre": "JHONATAN RAFAEL BASTERES GUILLERMO",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "BASTERES GUILLERMO JHONATAN RAFAEL",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 276,
+        "nombre": "RUBEN RUPERTO RODRIGUEZ PONCE",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "RODRIGUEZ PONCE RUBEN RUPERTO",
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 277,
+        "nombre": "LAURA VANESSA ORELLANA ZURITA",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "ORELLANA ZURITA LAURA VANESSA",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 278,
+        "nombre": "MORAIMA MARILYN SALAZAR BOBBIO",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "SALAZAR BOBBIO MORAIMA MARILYN",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 279,
+        "nombre": "YOHANA YOJANA GARCIA ALVAREZ",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "GARCIA ALVAREZ DE RAMIREZ YOHANA YOJANA",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "nombre abreviado"
+    },
+    {
+      "before": {
+        "id_usuario": 280,
+        "nombre": "JOSE RAFAEL JIMENEZ GARCIA",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "JIMENEZ GARCIA JOSE RAFAEL",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 281,
+        "nombre": "ROBERTO IVAN CACEDA LUJAN",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "CACEDA LUJAN ROBERTO IVAN",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 282,
+        "nombre": "FRANK MARCEL PANDURO ALVA",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "PANDURO ALVA FRANK MARCEL",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 283,
+        "nombre": "NATALIA ROSARIO GOMEZ CRUZ",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "GOMEZ CRUZ NATALIA ROSARIO",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 284,
+        "nombre": "SANCHEZ LUYO ZOILA NELLY",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "SANCHEZ LUYO ZOILA NELLY",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 285,
+        "nombre": "RICARDO ALEJANDRO CHANHUALLA PAREDES",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "RICARDO ALEJANDRO CHANHUALLA PAREDES",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 286,
+        "nombre": "DELIA JOHANA VASQUEZ ORE",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "REPRESENTANTE",
+        "representante_name": "VASQUEZ ORE DELIA JOHANA",
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "mismas palabras"
+    },
+    {
+      "before": {
+        "id_usuario": 311,
+        "nombre": "DANIEL MUÑOZ",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "SUPERVISOR",
+        "representante_name": null,
+        "supervisor_name": "MUÑOZ BALTA ALEJANDRO DANIEL"
+      },
+      "match": "nombre abreviado"
+    },
+    {
+      "before": {
+        "id_usuario": 310,
+        "nombre": "LILIBETH PEREZ",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "SUPERVISOR",
+        "representante_name": null,
+        "supervisor_name": "PEREZ PIZARRO LILIBETH JESUS"
+      },
+      "match": "nombre abreviado"
+    },
+    {
+      "before": {
+        "id_usuario": 312,
+        "nombre": "ITALO MEDINA",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "SUPERVISOR",
+        "representante_name": null,
+        "supervisor_name": "MEDINA LIZARRAGA JESUS ITALO"
+      },
+      "match": "nombre abreviado"
+    },
+    {
+      "before": {
+        "id_usuario": 309,
+        "nombre": "JAZMIN GUTIERREZ",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "SUPERVISOR",
+        "representante_name": null,
+        "supervisor_name": "GUTIERREZ REATEGUI BERA JAZMIN"
+      },
+      "match": "nombre abreviado"
+    },
+    {
+      "before": {
+        "id_usuario": 313,
+        "nombre": "CLARA VASQUEZ",
+        "rol": "USUARIO",
+        "estado": "ACTIVO",
+        "representante_name": null,
+        "supervisor_name": null
+      },
+      "after": {
+        "rol": "SUPERVISOR",
+        "representante_name": null,
+        "supervisor_name": "VASQUEZ PEÑA CLARA DEL CARMEN"
+      },
+      "match": "nombre abreviado"
+    }
+  ],
+  "pendientes": [
+    "RRMM 0027",
+    "RRMM 0028"
+  ]
+}

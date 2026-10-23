@@ -8,17 +8,18 @@ type AvailableVersionRow = { [K in keyof VersionPeriod]: K extends 'id' ? string
 function sqlClientZone(column: string) {
   const value = `LTRIM(RTRIM(${column}))`;
   const prefix = `LEFT(${value},CHARINDEX(' - ',${value}+' - ')-1)`;
-  return `(CASE WHEN ${prefix} LIKE '[A-Za-z][0-9]%' AND SUBSTRING(${prefix},2,500) NOT LIKE '%[^0-9]%'
+  const firstDigit = `PATINDEX('%[0-9]%',${prefix})`;
+  return `(CASE WHEN ${firstDigit}>1 AND LEFT(${prefix},CASE WHEN ${firstDigit}>0 THEN ${firstDigit}-1 ELSE 0 END) NOT LIKE '%[^A-Za-z]%'
+    AND SUBSTRING(${prefix},CASE WHEN ${firstDigit}>0 THEN ${firstDigit} ELSE 1 END,500) NOT LIKE '%[^0-9]%'
     THEN ${prefix} ELSE ${value} END)`;
 }
 // Only internal SQL fragments are composed; every user value is a bound parameter.
 function whereClients(q: Query, params: Record<string,string>, territory = false) {
   let seq = Object.keys(params).length;
   const list = (values: string[]) => values.map(value => { const key = `p${seq++}`; params[key] = value; return '@'+key; }).join(',');
-  const zone = "LEFT(LTRIM(RTRIM(c.zonabase)),CHARINDEX(' - ',LTRIM(RTRIM(c.zonabase))+' - ')-1)";
   const clientZone = sqlClientZone('c.zona_cliente');
   const clauses = ['c.version=@version'];
-  if (q.allowedZones) clauses.push(q.allowedZones.length ? `${zone} IN (${list(q.allowedZones)})` : '1=0');
+  if (q.allowedZones) clauses.push(q.allowedZones.length ? `${clientZone} IN (${list(q.allowedZones)})` : '1=0');
   if (!territory) {
     if (q.client) { params.client = q.client; clauses.push('(c.ruc=@client OR c.cp_cliente=@client)'); }
     else {

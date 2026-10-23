@@ -1,4 +1,5 @@
 "use client";
+import type { ReactNode } from 'react';
 import { Alert,AlertDescription } from '@/components/ui/alert';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -14,11 +15,11 @@ import { MatrixTable } from '../components/matrix-table';
 import { useReportController } from '../hooks/use-report-controller';
 import { PublicationDate } from '../components/publication-date';
 
-export default function DashboardPage() {
+export default function DashboardPage({ accountControl }: { accountControl?: ReactNode }) {
   const vm = useReportController();
   const { filters, data, options } = vm;
   return <div className="min-h-screen bg-background">
-    <Header filters={filters} versions={vm.versions} onVersion={value => vm.change('version', value)} onUnitChange={value => vm.change('unidadMedida', value)} isLoading={vm.loading} hasReport={!!data} />
+    <Header accountControl={accountControl} filters={filters} versions={vm.versions} onVersion={value => vm.change('version', value)} onUnitChange={value => vm.change('unidadMedida', value)} isLoading={vm.loading} hasReport={!!data} />
     <main className="mx-auto max-w-[1920px] space-y-6 px-4 py-7 lg:px-8">
       <section className="flex flex-wrap items-end justify-between gap-4">
         <div><div className="mb-2 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[.2em] text-primary"><Layers size={14} />Inteligencia de negocios</div><h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">De la oportunidad al pedido</h2><p className="mt-2 text-sm text-muted-foreground">Analiza tu cartera, compara el mercado y prioriza cada visita.</p></div>

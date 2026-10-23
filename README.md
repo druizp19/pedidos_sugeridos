@@ -61,11 +61,13 @@ Pool y cola SQL limitados a 4 operaciones concurrentes; 60 en espera, máximo 20
 
 Son colas y cachés en memoria por proceso, no trabajos persistentes. Un reinicio pierde la caché y peticiones en curso. Para varias réplicas se debe compartir la cola/caché o repartir explícitamente el presupuesto de conexiones; no lanzar múltiples procesos suponiendo que el límite 4 es global. Esto prepara un uso concurrente acotado, pero no certifica rendimiento de 50 usuarios sobre SQL real sin prueba de carga en el entorno final.
 
-## Integración futura con Ecosistema
+## Acceso desde Ecosistema
 
-Por decisión del usuario esta entrega no implementa login, JWT, cookies, redirecciones ni heartbeat. Las API operan sin autenticación de aplicación. Los comandos se enlazan a 127.0.0.1 para la revisión local. El equipo integrador debe incorporar el control de acceso del portal antes de publicarla para usuarios.
+La integración local usa el login de Ecosistema y las asignaciones de PORTAL.USUARIOS. Los representantes consultan únicamente sus zonas comerciales; los supervisores, las zonas de su equipo. Todas las API comprueban sesión, cuenta activa, permiso SUGERIDO y alcance vigente antes de devolver datos o usar caché. El navegador no puede establecer roles ni permisos.
 
-Rutas bajo el basePath `/sugerido`: GET /api/versions, GET /api/filters?version=V1, GET /api/search-clients, POST /api/matrix, POST /api/client-matrix y POST /api/export-excel. El cuerpo POST incluye version, unidadMedida, unidadNegocio[], franquicia[], marca[], categorizacion[], zonaBase[], supervisor[], vendedor[], selectedClients[], search y, para detalle, client. No confiar en un rol enviado por el navegador. El dominio admite allowedZones como punto de extensión para permisos validados por el integrador.
+Iniciar Ecosistema y Pedidos con su configuración local y abrir la plataforma desde el portal. El acceso directo sin sesión muestra la entrada a Ecosistema. INTEGRACION.md documenta las variables, el código de un solo uso, las cookies, las reglas territoriales y las pruebas realizadas. Los cambios no están desplegados en producción. El almacén de sesiones actual requiere un solo proceso del backend de Ecosistema.
+
+Las rutas mantienen el basePath /sugerido. El parámetro zonaBase sigue siendo el filtro comercial de DIM_CLIENTE.zona_cliente; allowedZones es exclusivamente interno y ahora aplica esa misma zona comercial. El benchmark y las exportaciones respetan el alcance del usuario.
 
 El sistema anterior y los componentes reemplazados se conservan en archivo/legacy-2026-10-20.zip, fuera de las rutas activas. Ver archivo/README.md.
 
